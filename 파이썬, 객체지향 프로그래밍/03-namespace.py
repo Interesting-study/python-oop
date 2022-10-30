@@ -31,6 +31,10 @@ class Robot:
     def how_many(cls):
         print(f"We have {cls.population} robots")
 
+    @staticmethod
+    def this_is_robot_class():
+        print("Yes!")
+
 
 siri = Robot("siri")
 jarvis = Robot("jarvis")
@@ -54,3 +58,4 @@ Robot.say_hi(self=siri)
 siri.say_hi()
 
 print(dir(siri))
+siri.this_is_robot_class()
